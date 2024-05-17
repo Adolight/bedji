@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <TITle>BIENVENU EN L3IN</TITle>
+    </head>
+    <BODY>
+        <style>
+            #bedji{
+                display: none;
+            }
+            #bedji:target{
+                display: block;
+            }
+            #bedji:not(:target) {
+                display: none;
+            }
+            .adolphe{
+                background-color: aliceblue ;
+                position: relative;
+                left: 25%;
+                width: 50%;
+            }
+            header{
+                background-color: aliceblue;
+                text-align: center;
+                border-radius: 3%;
+                position: relative;
+                border-bottom:2px solid;
+                border-top: 2px solid;
+            }
+            .tete{
+                position: relative;
+                background: fixed;
+                text-align: center;
+                background-color: hsl(202, 35%, 72%);
+                left: 2%;
+                width: 95%;
+                border-radius: 3%;
+                margin-top: 0%;
+                border-bottom:2px solid;
+                border-top: 2px solid;
+            }
+            body{
+                background-color: rgb(163, 158, 158);
+            }
+            .projets {
+                width: 90%;
+                margin-left: 15% ;
+                border-bottom: 1px solid;
+                
+            }
+            .presentation {
+                background-color: rgb(21, 95, 190);
+                border-radius: 5%;
+                text-align: left;
+                width: 68%;
+                text-align: center;
+                border: 2px rgb(12, 7, 4);
+                margin-left: 15%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .blanc{
+                color: aliceblue;
+            }
+            .parcour {
+                width: 90%;
+                margin-left: 15% ;
+                border-bottom: 1px solid;
+                border-top: 1px solid;
+            }
+            .diplome {
+                width: 90%;
+                margin-left: 15% ;
+                border-bottom: 1px solid;
+                border-top: 1px solid;
+            }
+            .competance{
+                width: 90%;
+                margin-left: 15% ;
+                border-bottom: 2px solid;
+                border-top: 1px solid;
+            }
+            img{
+                border: 10px royalblue;
+                border-radius: 45%;
+                margin-left: 20%;
+                margin-top: 3%;  
+            }
+            .image{
+                left: 10%;
+            }
+            .corp{
+                background-color: rgb(192, 207, 221);
+                width: 80%;
+                margin-left: 10%;
+            }
+            .left, .droite{
+                flex: 1;
+                width: 48%;
+            }
+            .droite{
+                width: 65%;
+                margin-left: 25%;
+            }
+            .blue {
+                color: rgb(14, 14, 209);
+            }
+            .haut {
+                 display: flex;
+            }
+            .gauche{
+                 flex: 35%;
+                 background-color: lightcyan;
+            }
+            .right{
+                flex: 65%;
+                background-color: lightblue;
+            }
+            .coordonee{
+                margin-left: 5%;
+                width: 80%;
+            }
+            b {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-transform: uppercase;
+                color: rgb(16, 16, 194);
+                font-weight: normal;
+                font-style: unset;
+            }
+            .langue{
+                width: 100%;
+                margin-left: 0% ;
+                border-bottom: 2px solid;
+                border-top: 1px;
+            }
+            .apropos{
+                background-color: aliceblue;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                width: 50%;
+                text-align: center;
+                margin-left: 25%;
+                border-bottom:2px solid;
+                border-top: 2px solid;
+                margin-top: 15%;
+            }
+            .entete{
+                background-color:  rgb(163, 158, 158);
+                position: fixed;
+                top: 0%;
+                left: 1%;
+                padding: 10px;
+                z-index: 999;
+                width: 97%;
+            }
+        </style>
+       <div class="entete">
+          <header>
+             <h2>BIENVENU DANS MON PORTFOLIOT</h2>
+          </header><br>
+          <div class="tete">
+             <button><a href="#" onclick="showinfo('accueil')" id="accueil">ACCEUIL</a></button><br>
+             <br>
+             <button><a href="#" onclick="showinfo('bedji')" id="bedji-link" color="aliceblue">MON CV</a></button>
+          </div><br>
+       </div>
+       <div class="apropos">
+           <p><b>A mon propos</b></p>
+           <p>BEDJI MOITANGAR est mon Nom, etudiant regulierement incrit a l'Universite <br>
+             de N'gaoundere, je suis un posine de la technoligie dont l'informatique en <br>
+              particulier. j'aime la musique et tout ce qui est en rapport avec l'Art.
+           </p>
+       </div><br>
+       <section id="bedji" style="display: none;">
+            <div class="adolphe">
+               <div class="haut">
+                   <div class="image gauche"><img src="Bedji.jpg" alt="" width="60%" ></div>
+                   <div class="right">
+                       <div class="presentation blanc">
+                           <p>BEDJI 
+                            MOITANGAR <br>
+                            21A184FS </p>
+                       </div>
+                       <div class="coordonee left">
+                           <p> <span class="blue"><img src="4.jpeg" alt="" width="5%">  Whatsapp:</span> +237 699260693 <br>
+                              <span class="blue"><img src="1.png" alt="" width="5%">  Adresse:</span> N'gaoundere, Dang, Bini <br>
+                              <span class="blue"><img src="2.jpeg" alt="" width="5%">  E-mail:</span> <a href="mailto:motangaradolphe@gmail.com">moitangaradolphe@gmail.com</a><br>
+                               <span class="blue"><img src="f.jpeg" alt="" width="5%">  Facebook:</span> Adolphe Moitangar <br>
+                               <span class="blue"><img src="i.jpeg" alt="" width="5%">  Instagram:</span> adolphe_235 <br>
+                           </p>
+                       </div>
+                   </div>
+               </div>
+               <div class="corp">
+                    <div class="projets droite">
+                       <p><b>Projet personnel</b></p>
+                       <p>Creation d'une application web pour un le lycee d'enseignement <br> technique industriel de  N'djamena </p>
+                   </div> 
+                   <div class="parcour droite"  >
+                       <p><b>Mon parcour scolaire</b></p>
+                       <ul>
+                          <li>2006-2009: ecole primaire publique associee de walia</li>
+                          <li>2009-2012: ecole primaire privee djorgolo de walia</li>
+                          <li>2012-2013: ecole primaire publique associee de walia</li>
+                          <li>2013-1017: CEG de walia</li>
+                          <li>2017-2020: lycee Technique Industriel de N'djamena</li>
+                          <li>2021-2024: Universite de Ngaoundere</li>
+                       </ul>
+                   </div>
+                   <div class="diplome droite">
+                       <p><b>Diplomes optenus</b></p>
+                       <ul>
+                          <li>Brevet d'Etude Fondamental en 2017</li>
+                          <li>Baccalaureat Technique en 2020</li>
+                       </ul>
+                   </div>
+                   <div class="competance droite">
+                        <p><b>Competance Technique</b></p>
+                        <ul>
+                           <li>Maintenance systeme d'exploitation: <br>
+                               Window
+                           </li>
+                           <li>developpement d'application web</li>
+                           <li>Maintenance photovoltaique</li>
+                           <li>Technitiens industriel</li>
+                       </ul>
+                       <div class="langue droite"></div><p><b>Competance linguistique</b></p>
+                           <ul>
+                              <li>Francais courament parler</li>
+                              <li>Anglais intermediaire</li>
+                           </ul>
+                       </div>
+                   </div>
+                       <P>  </P>
+               </div>     
+       </section>
+       <script>
+           setTimeout(function(){
+                document.querySelector('.chargement-font').style.display = 'none';
+                document.querySelector('.chargement-font').style.display = 'block';
+           }, 5000);
+           function showinfo(sectionId){
+               var section= document.querySelectorAll('section');
+               var links= document.querySelectorAll('nav a');
+               section.forEach(function(section){
+                  section.style.display = 'none';
+               });
+               links.forEach(function(links){
+                  links.classList.remove('active');
+               });
+               document.getElementById(sectionId).style.display ='block';
+               document.getElementById(sectionId + 'link').classList,add('active');
+               if (sectionId !== 'accueil'){
+                   document.getElementById('accueil-link').classList.remove('active')
+               }
+            }
+        </script>
+    </BODY>
+</html>
